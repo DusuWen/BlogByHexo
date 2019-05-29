@@ -80,5 +80,5 @@ theme: vexo
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: git@github.com:DusuWen/hexo-blog.git #github仓库地址
+  repo: git@github.com:DusuWen/dusuwen.git #github仓库地址
   branch: master # github分支
