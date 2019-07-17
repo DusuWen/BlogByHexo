@@ -1,11 +1,10 @@
 ---
-layout: '[layout]'
-title: '''编译node-sass过程中遇到的问题'''
+title: 编译node-sass过程中遇到的问题
 date: 2019-03-01 13:51:57
 tags:
 ---
-## 在项目暗转过程中需要编译node-sass以提供sass转css的支持
-### 但是使用环境没有vc++2015和python2编译环境会导致node-sass编译不通过
+### 在项目暗转过程中需要编译node-sass以提供sass转css的支持
+#### 但是使用环境没有vc++2015和python2编译环境会导致node-sass编译不通过
 安装编译工具
 
 `npm install -g node-gyp`

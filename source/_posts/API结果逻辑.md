@@ -1,5 +1,5 @@
 ---
-layout: '''tvshowvue'
+layout: 'tvshowvue'
 title: API结果逻辑
 date: 2018-06-28 11:05:48
 tags:
