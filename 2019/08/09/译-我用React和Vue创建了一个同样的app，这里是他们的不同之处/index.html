@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+  <head><meta name="generator" content="Hexo 3.9.0">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+  <meta name="description" content="DuSuWen&#39;s blog">
+  <meta name="keyword" content="hexo-theme, vuejs">
+  
+    <link rel="shortcut icon" href="/dusuwen/css/images/logo.png">
+  
+  <title>
+    
+      [译]我用React和Vue创建了一个同样的app，这里是他们的不同之处 | 博客
+    
+  </title>
+  <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="//cdnjs.cloudflare.com/ajax/libs/nprogress/0.2.0/nprogress.min.css" rel="stylesheet">
+  <link href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/tomorrow.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/dusuwen/css/style.css">
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/geopattern/1.2.3/js/geopattern.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/nprogress/0.2.0/nprogress.min.js"></script>
+  
+  
+  
+  
+    <!-- MathJax support START -->
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <!-- MathJax support END -->
+  
+
+
+</head>
+<div class="wechat-share">
+  <img src="/css/images/logo.png">
+</div>
+
+  <body>
+    <header class="header fixed-header">
+  <div class="header-container">
+    <a class="home-link" href="/dusuwen/">
+      <div class="logo"></div>
+      <span>博客</span>
+    </a>
+    <ul class="right-list">
+      
+        <li class="list-item">
+          
+            <a href="/dusuwen/" class="item-link">Home</a>
+          
+        </li>
+      
+        <li class="list-item">
+          
+            <a href="/dusuwen/tags/" class="item-link">Tags</a>
+          
+        </li>
+      
+        <li class="list-item">
+          
+            <a href="/dusuwen/archives/" class="item-link">Archives</a>
+          
+        </li>
+      
+        <li class="list-item">
+          
+            <a href="/dusuwen/project/" class="item-link">Projects</a>
+          
+        </li>
+      
+        <li class="list-item">
+          
+            <a href="/dusuwen/about/" class="item-link">About</a>
+          
+        </li>
+      
+    </ul>
+    <div class="menu">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </div>
+    <div class="menu-mask">
+      <ul class="menu-list">
+        
+          <li class="menu-item">
+            
+              <a href="/dusuwen/" class="menu-link">Home</a>
+            
+          </li>
+        
+          <li class="menu-item">
+            
+              <a href="/dusuwen/tags/" class="menu-link">Tags</a>
+            
+          </li>
+        
+          <li class="menu-item">
+            
+              <a href="/dusuwen/archives/" class="menu-link">Archives</a>
+            
+          </li>
+        
+          <li class="menu-item">
+            
+              <a href="/dusuwen/project/" class="menu-link">Projects</a>
+            
+          </li>
+        
+          <li class="menu-item">
+            
+              <a href="/dusuwen/about/" class="menu-link">About</a>
+            
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</header>
+
+    <div id="article-banner">
+  <h2>[译]我用React和Vue创建了一个同样的app，这里是他们的不同之处</h2>
+  <p class="post-date">2019-08-09</p>
+  <div class="arrow-down">
+    <a href="javascript:;"></a>
+  </div>
+</div>
+<main class="app-body flex-box">
+  <!-- Article START -->
+  <article class="post-article">
+    <section class="markdown-content"><p>原文地址：<a href="https://medium.com/javascript-in-plain-english/i-created-the-exact-same-app-in-react-and-vue-here-are-the-differences-e9a1ae8077fd" target="_blank" rel="noopener">I created the exact same app in React and Vue. Here are the differences.</a></p>
+<p>工作中在用Vue，所以我对它有很扎实的理解。我以前就很好奇，篱笆另一边的草是什么样子的，这里说的草就是React。</p>
+<p>我读过React的文档，也看过一些教学视频。他们是不错，但是我真的想知道的是React和Vue到底有多不同。这里说的‘不同’，不是说他们都在用虚拟Dom或者他们渲染页面的方式。我以为会有一个人愿意花点时间去解释代码层面的不同，所以我没少花时间去找这么一篇描写React和Vue哪里不同的文章，好让我对他们直接的不同之处有更深入的理解。</p>
+<p>不幸的是，我没找到。所以我意识到只有自己动手才能看到他们的相同与不同。在这种情况下，我觉得应该把这个过程记录下来，这也就是这篇文章最后诞生的原因。</p>
+<p><img src="https://miro.medium.com/max/700/1*WRzDZndJCduHwqgOpWmbhQ.png" alt="Who wore it better?"></p>
+<p>我决定去创建一个相同标准的To-Do App可以让用户向列表中添加或者删除条目。两个App都是使用了默认的脚手架工具（React用create-react-app，Vue用vue-cli）。顺便一提，脚手架工具用命令行。</p>
+<p><strong>行吧，这段导言已经写的比我预料的还要长。让我们开始看一下这两个app长什么样子吧。</strong></p>
+<p><img src="https://miro.medium.com/max/1266/1*mJ-qdNqldpgae2U5oS0qDg.png" alt="Vue vs React: The Irresistible Force meets The Immovable Object"></p>
+<p>两个App的CSS部分一模一样，但是他们存放的位置不同，有鉴于此，让我们看一下两个App的文件结构：</p>
+<p><img src="https://miro.medium.com/max/700/1*rahCwWEIXM7Wblk4L9ExYA.png" alt></p>
+<p>你可以看到，他们的文件结构几乎就是相同的。唯一的不同是React有三个css文件，Vue没有。</p>
+<p>原因是，在create-react-app中，一个React组件总是一个跟着它的文件保存着样式，而Vue CLI采用内含的方式，把声明的样式放在实际组件内部。</p>
+<p>最终，这两种不同的方式都起到了同样的效果，而且进一步的说，你也不需要在React和Vue中构造不同的CSS。这真的取决于个人喜好，你会听到很多来自开发社区关于如何组织CSS文件的讨论。现在，我们就遵守各脚手架工具默认的结构了。</p>
+<p>在我们进一步深入之前，先让我们看一下典型的React和Vue组件长什么样子。</p>
+<p><img src="https://miro.medium.com/max/1000/1*yQS8va-QXM2poiP-RqasOw.png" alt></p>
+<h4 id="我们如何变更数据"><a href="#我们如何变更数据" class="headerlink" title="我们如何变更数据"></a>我们如何变更数据</h4><p>首先，“变更数据”到底是什么意思？听起来有点技术含量，对不对？大概就是说把我们已经保存的数据给改变了。所以如果我们想把一个人的名字从John改成Mark，我们就是在变更数据。所以，这就是React和Vue不同点的关键所在。当Vue实际上创建一个数据对象（data object），意味着数据可以自由更新，但是React创建一个状态对象（state object），需要一点额外的工作，把对象带出去再更新。但是React采用这种需要一点额外的工作的方式有自身的理由，稍后我们再深入了解。首先，让我们看一下数据对象（data object）和状态对象（state object）的不同：</p>
+<p><img src="https://miro.medium.com/max/301/1*b9BjPHgneHv2K6ZYlAoe8A.png" alt></p>
+<p><img src="https://miro.medium.com/max/292/1*asy_vlGoZgtA3sAA7Dw4CA.png" alt></p>
+<p>所以你可以看到我们给两个组件赋予了同样的数据，但是他们只是简单地标记不同。所以，最开始传递数据是非常非常相似的。但正如我们已经提到过的，我们如何在两个框架里改变数据是不同的。</p>
+<p>我们一起看一下，有一个数据叫做name：‘Sunil’。</p>
+<p>在Vue中，我们通过使用this.name来引用这个数据。我们也可以通过this.name = ‘John’来更细数据。这样做会把我的名字改成’John’，我不知道别人叫我John是一种什么样的体验，但是你看，改成功了。</p>
+<p>在React中，我们通过使用this.state.name来引用相同的数据。现在有一个关键的不同之处在于我们不能简单的写this.state.name = ‘John’，因为React对阻止这类简单、清晰的数据变更做了一些限制。所以在React中，我们需要单独写一行this.setState({name:’John’})。</p>
+<p>其实这跟我们在Vue中做的事情是一样的，需要单独多写一行是因为当数据更新时Vue本质上默认把setState结合到框架里了。简而言之，React需要在setState中更新数据，而Vue认为你在数据中进行更新是因为你想更新。为什么React多此一举呢，为什么需要用setState呢？我们可以看一下<a href="https://medium.com/@revanth0212" target="_blank" rel="noopener">Revanth Kumar</a>这么解释的：</p>
+<blockquote>
+<p>这是因为当数据变更时React想重跑整个生命周期钩子，例如componentWillReceiveProps，shouldComponentUpdate, componentWillUpdate, render, componentDidUpdate。在你使用SetState后React会知道state发生了变化。如果你直接变更数据，React需要做更多额外的工作来保持数据变更轨迹和生命周期这些。所以为了React简单点，就用了setState。</p>
+</blockquote>
+<p>现在我们已经讲过变更数据了，让我们深入事情本质来看看如何在两个To Do App里增加一个新的项。</p>
+<h4 id="我们如何创建一个To-Do-项？"><a href="#我们如何创建一个To-Do-项？" class="headerlink" title="我们如何创建一个To Do 项？"></a>我们如何创建一个To Do 项？</h4><p>React：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">createNewToDoItem = <span class="function"><span class="params">()</span> =&gt;</span> &#123;</span><br><span class="line">    **<span class="keyword">this</span>**.setState( <span class="function">(<span class="params">&#123; list, todo &#125;</span>) =&gt;</span> (&#123;</span><br><span class="line">      list: [</span><br><span class="line">          ...list,</span><br><span class="line">        &#123;</span><br><span class="line">          todo</span><br><span class="line">        &#125;</span><br><span class="line">      ],</span><br><span class="line">      todo: <span class="string">''</span></span><br><span class="line">    &#125;)</span><br><span class="line">  );</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<h5 id="React怎么做的？"><a href="#React怎么做的？" class="headerlink" title="React怎么做的？"></a>React怎么做的？</h5><p>在React中，input标签上有一个叫做value的属性。这个value会通过几个捆绑在一起的很像Vue‘双向绑定’（如果你对双向绑定这个词不太熟悉，稍后的文章中会有更细节的解释）的函数得到自动更新。我们创建input标签的时候还附加了一个叫做onChange的事件监听器。我们简单看一下这个input标签，你就明白是怎么回事了：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;input type=<span class="string">"text"</span> </span><br><span class="line">       value=&#123;<span class="keyword">this</span>.state.todo&#125; </span><br><span class="line">       onChange=&#123;<span class="keyword">this</span>.handleInput&#125;/&gt;</span><br></pre></td></tr></table></figure>
+
+<p>一旦input标签中的值发生了变化，处理变化的函数（handleInput）就会执行。这个函数会把输入input里的值赋值给state中的todo 对象。这个函数长这样：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">handleInput = <span class="function"><span class="params">e</span> =&gt;</span> &#123;</span><br><span class="line">  <span class="keyword">this</span>.setState(&#123;</span><br><span class="line">    todo: e.target.value</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>现在，每当用户按下页面上的+按键增加todo项时，createNewToDoItem函数实际上是运行了this.setState并给它传递了一个函数。这个函数包含两个参数，第一个是赖在state对象里的整个list数组，第二个是todo项（由handleInput函数传递过来）。这个函数会返回一个新对象，这个对象是之前的list数组，并在todo项在这个数组末尾。向这个数组添加项使用到了展开语法（如果你不熟悉的话，百度一下ES6 语法）。</p>
+<p>最后，我们向todo里传入了一个空字符串，这也会自动更新input标签中的value属性。</p>
+<p>Vue：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">createNewToDoItem() &#123;</span><br><span class="line">    <span class="keyword">this</span>.list.push(</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="string">'todo'</span>: <span class="keyword">this</span>.todo</span><br><span class="line">        &#125;</span><br><span class="line">    );</span><br><span class="line">    <span class="keyword">this</span>.todo = <span class="string">''</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h5 id="Vue是怎么做的呢？"><a href="#Vue是怎么做的呢？" class="headerlink" title="Vue是怎么做的呢？"></a>Vue是怎么做的呢？</h5><p>在Vue中，input有一个处理器叫做v-model。它允许我们可以做到的所谓“双向绑定”。让我们先看一下代码，然后再解释发生了什么。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;input type=<span class="string">"text"</span> v-model=<span class="string">"todo"</span>/&gt;</span><br></pre></td></tr></table></figure>
+
+<p>v-model通过key来绑定input输入框和data 对象中的toDoItem。在页面加载之后，我们会把toDoItem设置为空字符串，例如todo：‘’。如果todo已经有值，例如todo：‘add some text here’，我们的input输入框也会有“add some text here”。回到我们一开始设置todo为空字符串的时候，不管我们在input框输入什么，他都会绑定到todo上。这就是我们所说的双向绑定（input输入框可以试data对象更新，data对象可以试input更新）。</p>
+<p>所以回头看之前的createNewToDoItem（）代码块，我们可以看到，我们把todo中的文本push（）到list数组，只不过todo里是一个空字符串。</p>
+<h4 id="我们如何从列表中删除数据？"><a href="#我们如何从列表中删除数据？" class="headerlink" title="我们如何从列表中删除数据？"></a>我们如何从列表中删除数据？</h4><p>React：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">deleteItem = <span class="function"><span class="params">indexToDelete</span> =&gt;</span> &#123;</span><br><span class="line">    <span class="keyword">this</span>.setState(<span class="function">(<span class="params">&#123; list &#125;</span>) =&gt;</span> (&#123;</span><br><span class="line">      list: list.filter(<span class="function">(<span class="params">toDo, index</span>) =&gt;</span> index !== indexToDelete)</span><br><span class="line">    &#125;));</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<h5 id="React怎么做的？-1"><a href="#React怎么做的？-1" class="headerlink" title="React怎么做的？"></a>React怎么做的？</h5></section>
+    <!-- Tags START -->
+    
+    <!-- Tags END -->
+    <!-- NAV START -->
+    
+  <div class="nav-container">
+    <!-- reverse left and right to put prev and next in a more logic postition -->
+    
+      <a class="nav-left" href="/dusuwen/2019/08/09/有关单元测试的一些事/">
+        <span class="nav-arrow">← </span>
+        
+          有关单元测试的一些事
+        
+      </a>
+    
+    
+      <a class="nav-right" href="/dusuwen/2019/09/06/同时配置多个git账号/">
+        
+          同时配置多个git账号
+        
+        <span class="nav-arrow"> →</span>
+      </a>
+    
+  </div>
+
+    <!-- NAV END -->
+    <!-- 打赏 START -->
+    
+    <!-- 打赏 END -->
+    <!-- 二维码 START -->
+    
+    <!-- 二维码 END -->
+    
+      <!-- No Comment -->
+    
+  </article>
+  <!-- Article END -->
+  <!-- Catalog START -->
+  
+    <aside class="catalog-container">
+  <div class="toc-main">
+    <strong class="toc-title">Catalog</strong>
+    
+      <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#我们如何变更数据"><span class="toc-nav-text">我们如何变更数据</span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#我们如何创建一个To-Do-项？"><span class="toc-nav-text">我们如何创建一个To Do 项？</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-5"><a class="toc-nav-link" href="#React怎么做的？"><span class="toc-nav-text">React怎么做的？</span></a></li><li class="toc-nav-item toc-nav-level-5"><a class="toc-nav-link" href="#Vue是怎么做的呢？"><span class="toc-nav-text">Vue是怎么做的呢？</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#我们如何从列表中删除数据？"><span class="toc-nav-text">我们如何从列表中删除数据？</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-5"><a class="toc-nav-link" href="#React怎么做的？-1"><span class="toc-nav-text">React怎么做的？</span></a></li></ol></li></ol>
+    
+  </div>
+</aside>
+  
+  <!-- Catalog END -->
+</main>
+
+<script>
+  (function () {
+    var url = 'https://dusuwen.github.io/dusuwen/2019/08/09/译-我用React和Vue创建了一个同样的app，这里是他们的不同之处/';
+    var banner = ''
+    if (banner !== '' && banner !== 'undefined' && banner !== 'null') {
+      $('#article-banner').css({
+        'background-image': 'url(' + banner + ')'
+      })
+    } else {
+      $('#article-banner').geopattern(url)
+    }
+    $('.header').removeClass('fixed-header')
+
+    // error image
+    $(".markdown-content img").on('error', function() {
+      $(this).attr('src', 'http://file.muyutech.com/error-img.png')
+      $(this).css({
+        'cursor': 'default'
+      })
+    })
+
+    // zoom image
+    $(".markdown-content img").on('click', function() {
+      var src = $(this).attr('src')
+      if (src !== 'http://file.muyutech.com/error-img.png') {
+        var imageW = $(this).width()
+        var imageH = $(this).height()
+
+        var zoom = ($(window).width() * 0.95 / imageW).toFixed(2)
+        zoom = zoom < 1 ? 1 : zoom
+        zoom = zoom > 2 ? 2 : zoom
+        var transY = (($(window).height() - imageH) / 2).toFixed(2)
+
+        $('body').append('<div class="image-view-wrap"><div class="image-view-inner"><img src="'+ src +'" /></div></div>')
+        $('.image-view-wrap').addClass('wrap-active')
+        $('.image-view-wrap img').css({
+          'width': `${imageW}`,
+          'transform': `translate3d(0, ${transY}px, 0) scale3d(${zoom}, ${zoom}, 1)`
+        })
+        $('html').css('overflow', 'hidden')
+
+        $('.image-view-wrap').on('click', function() {
+          $(this).remove()
+          $('html').attr('style', '')
+        })
+      }
+    })
+  })();
+</script>
+
+
+
+
+
+
+
+    <div class="scroll-top">
+  <span class="arrow-icon"></span>
+</div>
+    <footer class="app-footer">
+  <p class="copyright">
+    &copy; 2020 | Proudly powered by <a href="https://hexo.io" target="_blank">Hexo</a>
+    <br>
+    Theme by <a href="https://github.com/yanm1ng">yanm1ng</a>
+  </p>
+</footer>
+
+<script>
+  function async(u, c) {
+    var d = document, t = 'script',
+      o = d.createElement(t),
+      s = d.getElementsByTagName(t)[0];
+    o.src = u;
+    if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+    s.parentNode.insertBefore(o, s);
+  }
+</script>
+<script>
+  async("//cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js", function(){
+    FastClick.attach(document.body);
+  })
+</script>
+
+<script>
+  var hasLine = 'true';
+  async("//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js", function(){
+    $('figure pre').each(function(i, block) {
+      var figure = $(this).parents('figure');
+      if (hasLine === 'false') {
+        figure.find('.gutter').hide();
+      }
+      var lang = figure.attr('class').split(' ')[1] || 'code';
+      var codeHtml = $(this).html();
+      var codeTag = document.createElement('code');
+      codeTag.className = lang;
+      codeTag.innerHTML = codeHtml;
+      $(this).attr('class', '').empty().html(codeTag);
+      figure.attr('data-lang', lang.toUpperCase());
+      hljs.highlightBlock(block);
+    });
+  })
+</script>
+<!-- Baidu Tongji -->
+
+<script src="/dusuwen/js/script.js"></script>
+  </body>
+</html>

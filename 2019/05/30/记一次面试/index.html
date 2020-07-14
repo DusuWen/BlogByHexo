@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html>
+  <head><meta name="generator" content="Hexo 3.9.0">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+  <meta name="description" content="DuSuWen&#39;s blog">
+  <meta name="keyword" content="hexo-theme, vuejs">
+  
+    <link rel="shortcut icon" href="/dusuwen/css/images/logo.png">
+  
+  <title>
+    
+      面试题合集（持续更新） | 博客
+    
+  </title>
+  <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="//cdnjs.cloudflare.com/ajax/libs/nprogress/0.2.0/nprogress.min.css" rel="stylesheet">
+  <link href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/tomorrow.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/dusuwen/css/style.css">
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/geopattern/1.2.3/js/geopattern.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/nprogress/0.2.0/nprogress.min.js"></script>
+  
+  
+  
+  
+    <!-- MathJax support START -->
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <!-- MathJax support END -->
+  
+
+
+</head>
+<div class="wechat-share">
+  <img src="/css/images/logo.png">
+</div>
+
+  <body>
+    <header class="header fixed-header">
+  <div class="header-container">
+    <a class="home-link" href="/dusuwen/">
+      <div class="logo"></div>
+      <span>博客</span>
+    </a>
+    <ul class="right-list">
+      
+        <li class="list-item">
+          
+            <a href="/dusuwen/" class="item-link">Home</a>
+          
+        </li>
+      
+        <li class="list-item">
+          
+            <a href="/dusuwen/tags/" class="item-link">Tags</a>
+          
+        </li>
+      
+        <li class="list-item">
+          
+            <a href="/dusuwen/archives/" class="item-link">Archives</a>
+          
+        </li>
+      
+        <li class="list-item">
+          
+            <a href="/dusuwen/project/" class="item-link">Projects</a>
+          
+        </li>
+      
+        <li class="list-item">
+          
+            <a href="/dusuwen/about/" class="item-link">About</a>
+          
+        </li>
+      
+    </ul>
+    <div class="menu">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </div>
+    <div class="menu-mask">
+      <ul class="menu-list">
+        
+          <li class="menu-item">
+            
+              <a href="/dusuwen/" class="menu-link">Home</a>
+            
+          </li>
+        
+          <li class="menu-item">
+            
+              <a href="/dusuwen/tags/" class="menu-link">Tags</a>
+            
+          </li>
+        
+          <li class="menu-item">
+            
+              <a href="/dusuwen/archives/" class="menu-link">Archives</a>
+            
+          </li>
+        
+          <li class="menu-item">
+            
+              <a href="/dusuwen/project/" class="menu-link">Projects</a>
+            
+          </li>
+        
+          <li class="menu-item">
+            
+              <a href="/dusuwen/about/" class="menu-link">About</a>
+            
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</header>
+
+    <div id="article-banner">
+  <h2>面试题合集（持续更新）</h2>
+  <p class="post-date">2019-05-30</p>
+  <div class="arrow-down">
+    <a href="javascript:;"></a>
+  </div>
+</div>
+<main class="app-body flex-box">
+  <!-- Article START -->
+  <article class="post-article">
+    <section class="markdown-content"><h3 id="Javascript的几种数据类型"><a href="#Javascript的几种数据类型" class="headerlink" title="Javascript的几种数据类型"></a>Javascript的几种数据类型</h3><p>最新的ECMAScript标准定义了7中数据类型：</p>
+<ul>
+<li>6种原始类型<ul>
+<li>Boolean</li>
+<li>Null</li>
+<li>Undefined</li>
+<li>Numer</li>
+<li>String</li>
+<li>Symbol(ECMAScript6 新定义)</li>
+</ul>
+</li>
+<li>和Object</li>
+</ul>
+<h3 id="如何判断一个Javascript数据类型"><a href="#如何判断一个Javascript数据类型" class="headerlink" title="如何判断一个Javascript数据类型"></a>如何判断一个Javascript数据类型</h3><h4 id="typeof-操作符"><a href="#typeof-操作符" class="headerlink" title="typeof 操作符"></a>typeof 操作符</h4><p><code>typeof</code>是<code>javascript</code>原生提供的判断数据类型的运算符，它会返回一个表示参数的数据类型的字符串，但是需要注意的是，<code>Null</code>会返回object，数组属于Any other object也会返回object。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> a = <span class="literal">null</span>;</span><br><span class="line"><span class="keyword">const</span> b = &#123;&#125;;</span><br><span class="line"><span class="keyword">const</span> c= [];</span><br><span class="line"><span class="built_in">console</span>.log(<span class="keyword">typeof</span>(a)); <span class="comment">//Object</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="keyword">typeof</span>(b)); <span class="comment">//Object</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="keyword">typeof</span>(c)); <span class="comment">//Object</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="instanceof运算符"><a href="#instanceof运算符" class="headerlink" title="instanceof运算符"></a>instanceof运算符</h4><p><code>instanceof</code>运算符可以用来判断某个构造函数的<code>prototype</code>属性所指向的对象是否存在于另外一个要检测对象的原型链上。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> a = [];</span><br><span class="line"><span class="keyword">const</span> b = &#123;&#125;;</span><br><span class="line"><span class="built_in">console</span>.log(a <span class="keyword">instanceof</span> <span class="built_in">Array</span>);<span class="comment">//true</span></span><br><span class="line"><span class="built_in">console</span>.log(a <span class="keyword">instanceof</span> <span class="built_in">Object</span>);<span class="comment">//true,在数组的原型链上也能找到Object构造函数</span></span><br><span class="line"><span class="built_in">console</span>.log(b <span class="keyword">instanceof</span> <span class="built_in">Array</span>);<span class="comment">//false</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="Object-prototype-toString"><a href="#Object-prototype-toString" class="headerlink" title="Object.prototype.toString"></a>Object.prototype.toString</h4><p>每一个继承自<code>Object</code>的对象都拥有<code>toString</code>的方法，如果一个对象的<code>toString</code>方法没有被重写过的话，那么<code>toString</code>方法将会返回”[object <em>type</em>]”，其中的<em>type</em>代表的是对象的类型。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> a = [<span class="string">'Hello'</span>,<span class="string">'Howard'</span>];</span><br><span class="line"><span class="keyword">const</span> b = &#123;<span class="number">0</span>:<span class="string">'Hello'</span>,<span class="number">1</span>:<span class="string">'Howard'</span>&#125;;</span><br><span class="line"><span class="keyword">const</span> c = <span class="string">'Hello Howard'</span>;</span><br><span class="line"><span class="built_in">Object</span>.prototype.toString.call(a);<span class="comment">//"[object Array]"</span></span><br><span class="line"><span class="built_in">Object</span>.prototype.toString.call(b);<span class="comment">//"[object Object]"</span></span><br><span class="line"><span class="built_in">Object</span>.prototype.toString.call(c);<span class="comment">//"[object String]"</span></span><br></pre></td></tr></table></figure>
+
+<p>除了使用<code>call()</code>，还可以使用<code>apply()</code></p>
+<p>但是，<code>Object</code>原型链上的<code>toString</code>方法可以被重写，如果修改过<code>toString</code>方法，就无法准确判断数据类型</p>
+<h4 id="constructor-NaN"><a href="#constructor-NaN" class="headerlink" title="constructor"></a>constructor</h4><p>实例化的数组拥有一个<code>constructor</code>属性，这个属性指向生成这个数组的方法。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> a = [];</span><br><span class="line"><span class="built_in">console</span>.log(a.constructor);<span class="comment">//function Array()&#123; [native code] &#125;</span></span><br><span class="line"><span class="keyword">const</span> b = &#123;&#125;;</span><br><span class="line"><span class="built_in">console</span>.log(b.constructor);<span class="comment">//function Object()&#123; [native code] &#125;</span></span><br></pre></td></tr></table></figure>
+
+<p>但是，<code>constructor</code>属性可以被改写，如果修改过<code>constructor</code>属性，就无法准确判断数据类型。</p>
+<h4 id="Array-isArray"><a href="#Array-isArray" class="headerlink" title="Array.isArray()"></a>Array.isArray()</h4><p>用来判断一个变量是否为数组，无论是修改<code>Object.prototype.toString</code>方法还是<code>constructor</code>属性都不会影响判断结果。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> a = [];</span><br><span class="line"><span class="keyword">const</span> b = &#123;&#125;;</span><br><span class="line"><span class="built_in">Array</span>.isArray(a);<span class="comment">//true</span></span><br><span class="line"><span class="built_in">Array</span>.isArray(b);<span class="comment">//false</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="Vue实现数据绑定的原理"><a href="#Vue实现数据绑定的原理" class="headerlink" title="Vue实现数据绑定的原理"></a>Vue实现数据绑定的原理</h3><p>当把一个<code>javascript</code>对象传递给<code>vue</code>实例的<code>data</code>选项时，<code>vue</code>将遍历这个对象的所有属性，并使用<code>object.defineProperty</code>把这些属性转变为<code>getter</code>和<code>settter</code>。每个组件实例都有相应的<code>watcher</code>实例对象，它会在组件渲染过程中把属性记录为依赖，当依赖的<code>setter</code>被调用时，会通知<code>watcher</code>重新计算，<code>watcher</code>通过依赖找到使用<code>getter</code>获取该属性值的组件，并通知该组件重新渲染，渲染完成后再次把属性记录为依赖存入<code>watcher</code>实例。</p>
+<p><img src="https://cn.vuejs.org/images/data.png" alt="如何追踪变化"></p>
+<p>注意事项</p>
+<ul>
+<li>Vue不能检测到对象属性的添加或删除</li>
+<li>Vue不允许动态添加根基响应式属性</li>
+</ul>
+<p>对于第一个问题可以采用<code>Vue.set(object, key, value)</code>方法来条线响应属性。对于第二个问题，只能在初始化实例前声明根级响应式属性，哪怕只是一个空值。</p>
+<h3 id="为什么vue-组件里-data-必须是一个function"><a href="#为什么vue-组件里-data-必须是一个function" class="headerlink" title="为什么vue 组件里 data 必须是一个function"></a>为什么vue 组件里 data 必须是一个function</h3><p>因为每一次使用新的组件，都会有一个新的实例被创建，一个组件的<code>data</code>必须是一个函数，因此每个实例可以维护一份被返回对象的独立的拷贝</p>
+<h3 id="Proxy相比Object-defineProperty的优势是什么"><a href="#Proxy相比Object-defineProperty的优势是什么" class="headerlink" title="Proxy相比Object.defineProperty的优势是什么"></a>Proxy相比Object.defineProperty的优势是什么</h3><h4 id="Object-defineProperty的问题主要有三个"><a href="#Object-defineProperty的问题主要有三个" class="headerlink" title="Object.defineProperty的问题主要有三个"></a><code>Object.defineProperty</code>的问题主要有三个</h4><ul>
+<li>不能监听数组的变化</li>
+<li>必须遍历对象的每个属性</li>
+<li>必须深层遍历嵌套的对象</li>
+<li>无法监听对象属性的增加和删除</li>
+</ul>
+<h4 id="Proxy的几个特点"><a href="#Proxy的几个特点" class="headerlink" title="Proxy的几个特点"></a><code>Proxy</code>的几个特点</h4><ul>
+<li>针对对象</li>
+<li>支持数组</li>
+<li>支持13种拦截方式</li>
+<li>作为新标准收到浏览器厂商的重点关注和性能优化</li>
+</ul>
+<h3 id="computed与methods"><a href="#computed与methods" class="headerlink" title="computed与methods"></a>computed与methods</h3><p>计算属性是基于他们的依赖进行缓存的，只有在相关依赖发生改变时才会重新求值。相比之下，每当触发重新渲染时，调用方法将总会再次执行函数。</p>
+<h3 id="http状态码"><a href="#http状态码" class="headerlink" title="http状态码"></a>http状态码</h3><ul>
+<li>1xx消息</li>
+<li>2xx成功</li>
+<li>3xx重定向</li>
+<li>4xx客户端错误</li>
+<li>5xx服务器错误</li>
+</ul>
+<h3 id="cookie和session-的区别"><a href="#cookie和session-的区别" class="headerlink" title="cookie和session 的区别"></a>cookie和session 的区别</h3><ul>
+<li>存取方式的不同</li>
+<li>隐私策略的不同</li>
+<li>有效期上的不同</li>
+<li>服务器压力的不同</li>
+<li>浏览器支持的不同</li>
+<li>跨域支持上的不同</li>
+</ul>
+<h3 id="Promise-链式调用"><a href="#Promise-链式调用" class="headerlink" title="Promise 链式调用"></a>Promise 链式调用</h3><p>《ECMAScript 6 入门》一书中，阮一峰在<a href="http://es6.ruanyifeng.com/#docs/promise" target="_blank" rel="noopener">Promise对象</a>介绍<code>Promise</code> 是异步编程的一种解决方案，比传统的解决方案——回调函数和事件——更合理和更强大。</p>
+<p><code>then</code>方法接受两个参数，第一个是<code>resolved</code>状态的回调函数，第二个（可选）是rejected状态的回调函数。同时，<code>then</code>方法返回一个新的Promise实例，因此可以采用链式写法，在一个<code>then</code>后再掉调用一个<code>then</code>，而后一个then方法依旧可以接受两个参数的。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">getJSON(<span class="string">"/post/1.json"</span>).then(<span class="function"><span class="keyword">function</span>(<span class="params">post</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> getJSON(post.commentURL);</span><br><span class="line">&#125;).then(<span class="function"><span class="keyword">function</span> <span class="title">funcA</span>(<span class="params">comments</span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="string">"resolved: "</span>, comments);</span><br><span class="line">&#125;, <span class="function"><span class="keyword">function</span> <span class="title">funcB</span>(<span class="params">err</span>)</span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="string">"rejected: "</span>, err);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<p>需要注意的是，一般使用<code>Promise</code>时总是配合<code>catch</code>方法使用，所以，此时不要在<code>then</code>方法里面定义Reject状态的回调函数，直接使用<code>catch</code>方法。好处是，<code>catch</code>方法总是可以捕获到在<code>then</code>方法执行过程中产生的Error，有利于后期排查。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// bad</span></span><br><span class="line">promise</span><br><span class="line">  .then(<span class="function"><span class="keyword">function</span>(<span class="params">data</span>) </span>&#123;</span><br><span class="line">    <span class="comment">// success</span></span><br><span class="line">  &#125;, <span class="function"><span class="keyword">function</span>(<span class="params">err</span>) </span>&#123;</span><br><span class="line">    <span class="comment">// error</span></span><br><span class="line">  &#125;);</span><br><span class="line"></span><br><span class="line"><span class="comment">// good</span></span><br><span class="line">promise</span><br><span class="line">  .then(<span class="function"><span class="keyword">function</span>(<span class="params">data</span>) </span>&#123; <span class="comment">//cb</span></span><br><span class="line">    <span class="comment">// success</span></span><br><span class="line">  &#125;)</span><br><span class="line">  .catch(<span class="function"><span class="keyword">function</span>(<span class="params">err</span>) </span>&#123;</span><br><span class="line">    <span class="comment">// error</span></span><br><span class="line">  &#125;);</span><br></pre></td></tr></table></figure>
+
+<p>一般总是建议，Promise 对象后面要跟<code>catch</code>方法，这样可以处理 Promise 内部发生的错误。<code>catch</code>方法返回的还是一个 Promise 对象，因此后面还可以接着调用<code>then</code>方法。而且，<code>catch</code>方法之后还可以继续执行<code>then</code>方法，甚至<code>catch</code>方法之后还可以执行<code>catch</code>方法。</p>
+<p>在调用<code>then</code>方法实现链式调用时需要特别注意如何处理错误，没有<code>catch</code>住的错误会被<code>Promise</code>’吃掉‘</p>
+<h3 id="Vue中对Array的检测做了什么特殊处理"><a href="#Vue中对Array的检测做了什么特殊处理" class="headerlink" title="Vue中对Array的检测做了什么特殊处理"></a>Vue中对Array的检测做了什么特殊处理</h3><p>由于<code>Object.defineProperty</code>不能监听数组的变化，需要进行数组方法的重写，所以在Vue.js官方文档中<a href="https://cn.vuejs.org/v2/guide/list.html" target="_blank" rel="noopener">数组更新检测</a>中提到Vue提供一组观察数组的变异方法，使用这些方法才可以触发视图更新。</p>
+<p>同时，文档中提到，由于Javascript的限制</p>
+<ul>
+<li>利用索引直接设置一个项</li>
+<li>直接修改数组长度</li>
+</ul>
+<p>都不会触发视图更新，需要使用<code>vm.$set</code>和<code>splice</code>方法</p>
+<h3 id="简述同源策略"><a href="#简述同源策略" class="headerlink" title="简述同源策略"></a>简述同源策略</h3><p>同源的三个要素</p>
+<ul>
+<li>协议相同</li>
+<li>端口相同</li>
+<li>域名相同</li>
+</ul>
+<p>当某个页面上执行的<code>ajax</code>请求的<code>url</code>与该页面的url中有上面三个中的任何一个不一样，就会产生跨域问题</p>
+<p>解决跨域最常见的方案是后台服务端在<code>Response-Header</code>中设置<code>Access-Control-Allow-Origin</code></p>
+<h3 id="F5-和Ctrl-F5的区别"><a href="#F5-和Ctrl-F5的区别" class="headerlink" title="F5 和Ctrl+F5的区别"></a>F5 和Ctrl+F5的区别</h3><p>在页面上使用<code>F5</code>和<code>Ctrl+F5</code>都可以实现刷新当前页面，不同点是<code>F5</code>会使用当前浏览器对该页面的缓存资源，<code>Ctrl+F5</code>会强制从服务器获取资源</p>
+<h4 id="请求中的size"><a href="#请求中的size" class="headerlink" title="请求中的size"></a>请求中的size</h4><p>打开控制面板查看<code>Network</code>中的资源请求，可以看到<code>size</code>一列中会出现4种情况</p>
+<ul>
+<li>资源的大小</li>
+<li><code>from disk cache</code></li>
+<li><code>from memory cache</code></li>
+<li><code>from ServiceWorker</code></li>
+</ul>
+<h5 id="from-memory-cache"><a href="#from-memory-cache" class="headerlink" title="from memory cache"></a>from memory cache</h5><p>表示该请求资源取自内存，不会再向服务器请求，关闭当前页面资源被释放</p>
+<h5 id="from-disk-cache"><a href="#from-disk-cache" class="headerlink" title="from disk cache"></a>from disk cache</h5><p>表示该请求资源取自磁盘，不会再向服务器请求，关闭当前页面资源不会被释放</p>
+<h5 id="资源的大小"><a href="#资源的大小" class="headerlink" title="资源的大小"></a>资源的大小</h5><p>当http状态码为200时，表示从服务器获取的资源大小</p>
+<p>当http状态码为304时，表示与服务器通信报文的大小，不是资源的大小，此时资源从本地获取</p>
+<h5 id="from-ServiceWorker"><a href="#from-ServiceWorker" class="headerlink" title="from ServiceWorker"></a>from ServiceWorker</h5><p>表示该资源取自ServiceWorker</p>
+<h4 id="造成size多重情况的原因"><a href="#造成size多重情况的原因" class="headerlink" title="造成size多重情况的原因"></a>造成size多重情况的原因</h4><p>是因为使用<code>F5</code>和<code>Ctrl+F5</code>两种方式发送的请求头不一样（不同浏览器有些许差异）</p>
+<h5 id="F5-在chrome中"><a href="#F5-在chrome中" class="headerlink" title="F5 在chrome中"></a>F5 在chrome中</h5><p>按<code>F5</code>后，请求状态码是200，资源的请求头中会有<code>provisional headers are show</code>字样，表示未与服务端正确通信，详细表头也不会显示，强缓存 <code>from disk cache</code>或者<code>from memory cache</code>都不会正确显示请求头</p>
+<h5 id="F5-在firefox中"><a href="#F5-在firefox中" class="headerlink" title="F5 在firefox中"></a>F5 在firefox中</h5><p>按<code>F5</code>后，请求的状态码是304 Not Modified，这是因为firefox在<code>F5</code>发送请求时会在请求头添加<code>If-Modified-Since</code>字段，如果资源未过期，命中缓存，服务器会直接返回304状态码，浏览器会直接使用本地资源，这就是协商缓存</p>
+<h5 id="Ctrl-F5-在chrome和firefox中"><a href="#Ctrl-F5-在chrome和firefox中" class="headerlink" title="Ctrl+F5 在chrome和firefox中"></a>Ctrl+F5 在chrome和firefox中</h5><p>请求头中多了<code>Cache-Control:no-cache</code>和<code>Prafma:no-cache</code>表示浏览器不接受本地缓存的资源，需要到源服务器进行资源请求，但是这个过程中其实可以使用缓存服务器中资源，不过需要到源服务器进行验证，验证通过才可以将缓存服务器的资源返回给浏览器</p>
+<h3 id="内存管理"><a href="#内存管理" class="headerlink" title="内存管理"></a>内存管理</h3><h4 id="基础数据类型与栈内存"><a href="#基础数据类型与栈内存" class="headerlink" title="基础数据类型与栈内存"></a>基础数据类型与栈内存</h4><p>基本类型是保存在栈内存中的简单数据段，它们的值都有固定的大小，保存在栈空间，通过按值访问，并由系统自动分配和自动释放。 这样带来的好处就是，内存可以及时得到回收，相对于堆来说，更加容易管理内存空间。 JavaScript 中的 <code>Boolean、Null、Undefined、Number、String、Symbol</code> 都是基本类型。</p>
+<p><img src="https://res.cloudinary.com/drlouie/image/upload/v1563519906/16ba7a26808f090d_rtkquj.png" alt="栈"></p>
+<h4 id="引用数据类型与堆内存"><a href="#引用数据类型与堆内存" class="headerlink" title="引用数据类型与堆内存"></a>引用数据类型与堆内存</h4><p>引用类型（如对象、数组、函数等）是保存在堆内存中的对象，值大小不固定，栈内存中存放的该对象的访问地址指向堆内存中的对象，JavaScript 不允许直接访问堆内存中的位置，因此操作对象时，实际操作对象的引用。 JavaScript 中的 <code>Object、Array、Function、RegExp、Date</code> 是引用类型。</p>
+<p><img src="https://res.cloudinary.com/drlouie/image/upload/v1563519997/16bb1950c798616d_gso2rl.png" alt="堆"></p>
+<h3 id="浅拷贝和深拷贝"><a href="#浅拷贝和深拷贝" class="headerlink" title="浅拷贝和深拷贝"></a>浅拷贝和深拷贝</h3><h4 id="基本类型发生复制"><a href="#基本类型发生复制" class="headerlink" title="基本类型发生复制"></a>基本类型发生复制</h4><p><img src="https://res.cloudinary.com/drlouie/image/upload/v1563520006/16bb1950c8a01f36_hw4vc7.webp" alt="基本类型复制"></p>
+<p>在栈内存中的数据发生复制行为时，系统会自动为新的变量分配一个新值，最后这些变量都是 <strong>相互独立，互不影响的</strong>。</p>
+<h4 id="引用类型发生复制"><a href="#引用类型发生复制" class="headerlink" title="引用类型发生复制"></a>引用类型发生复制</h4><p><img src="https://res.cloudinary.com/drlouie/image/upload/v1563520115/16bb1950c88d95c2_pkyzf0.webp" alt="引用类型发生复制"></p>
+<ul>
+<li><p>引用类型的复制，同样为新的变量 b 分配一个新的值，保存在栈内存中，不同的是，这个值仅仅是引用类型的一个地址指针。</p>
+</li>
+<li><p>他们两个指向同一个值，也就是地址指针相同，在堆内存中访问到的具体对象实际上是同一个。</p>
+</li>
+<li><p>因此改变 b.x 时，a.x 也发生了变化，这就是引用类型的特性。</p>
+</li>
+</ul>
+<h4 id="浅拷贝"><a href="#浅拷贝" class="headerlink" title="浅拷贝"></a>浅拷贝</h4><p><code>引用类型的复制</code>就是浅拷贝，复制得到的访问地址都指向<code>同一个内存空间</code>，所以修改其中一个的值，另外一个也跟着改变。</p>
+<h4 id="深拷贝"><a href="#深拷贝" class="headerlink" title="深拷贝"></a>深拷贝</h4><p>复制得到的访问地址指向<code>不同的内存空间，互不干扰</code>，所以修改其中一个值，另外一个不会改变。</p>
+<p><img src="https://res.cloudinary.com/drlouie/image/upload/v1563520358/hexo/16bb1950c95c6bd7_d9lvpu.webp" alt="复制后"></p>
+<h4 id="如何实现深拷贝"><a href="#如何实现深拷贝" class="headerlink" title="如何实现深拷贝"></a>如何实现深拷贝</h4><p>知晓引用类型的原理后实现深拷贝的方法就是创建一个新的堆内存控件，使复制出的栈内存空间指向新的堆内存引用。</p>
+<h5 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h5><ul>
+<li>for循环</li>
+<li>slice方法</li>
+<li>concat方法</li>
+<li>es6拓展运算</li>
+<li>JSON.parse和JSON.stringify</li>
+</ul>
+<h5 id="对象"><a href="#对象" class="headerlink" title="对象"></a>对象</h5><ul>
+<li>for in 循环</li>
+<li>JSON.parse和JSON.stringify（可实现多维对象的深拷贝）</li>
+<li>es6拓展运算</li>
+<li>Object.assign()（只能实现一维对象的深拷贝）</li>
+</ul>
+<p>使用JSON.parse和JSON.stringify对对象进行深拷贝有一点需要注意：进行JSON.stringify() 序列化的过程中，undefined、任意的函数以及 symbol 值，在序列化过程中会被忽略（出现在非数组对象的属性值中时）或者被转换成 null（出现在数组中时）。</p>
+<p>参考：<a href="https://juejin.im/post/5d1b07716fb9a07efe2dd644" target="_blank" rel="noopener">https://juejin.im/post/5d1b07716fb9a07efe2dd644</a></p>
+<h3 id="let和var-命令"><a href="#let和var-命令" class="headerlink" title="let和var 命令"></a>let和var 命令</h3><h4 id="基本用法"><a href="#基本用法" class="headerlink" title="基本用法"></a>基本用法</h4><p><code>let</code> 命令只在代码块能有效</p>
+<h4 id="不存在变量提升"><a href="#不存在变量提升" class="headerlink" title="不存在变量提升"></a>不存在变量提升</h4><p><code>var</code>命令会发生“变量提升”现象，即变量可以在声明之前使用，值为<code>undefined</code>。为了纠正这种现象，let命令改变了语法应为，它所声明的变量一定要在声明后使用，否则报错。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// var 的情况</span></span><br><span class="line"><span class="built_in">console</span>.log(foo); <span class="comment">// 输出undefined</span></span><br><span class="line"><span class="keyword">var</span> foo = <span class="number">2</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">// let 的情况</span></span><br><span class="line"><span class="built_in">console</span>.log(bar); <span class="comment">// 报错ReferenceError</span></span><br><span class="line"><span class="keyword">let</span> bar = <span class="number">2</span>;</span><br></pre></td></tr></table></figure>
+
+<p>上面代码中，变量<code>foo</code>用<code>var</code>命令声明，会发生变量提升，即脚本开始运行时，变量<code>foo</code>已经存在了，但是没有值，所以会输出<code>undefined</code>。变量<code>bar</code>用<code>let</code>命令声明，不会发生变量提升。这表示在声明它之前，变量<code>bar</code>是不存在的，这时如果用到它，就会抛出一个错误。</p>
+<h4 id="暂时性死区（temporal-dead-zone，简称TDZ）"><a href="#暂时性死区（temporal-dead-zone，简称TDZ）" class="headerlink" title="暂时性死区（temporal dead zone，简称TDZ）"></a>暂时性死区（temporal dead zone，简称TDZ）</h4><p>只要块级作用域内存在<code>let</code>命令，它所声明的变量就“绑定”（binding）这个区域，不再受外部的影响。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> tmp = <span class="number">123</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> (<span class="literal">true</span>) &#123;</span><br><span class="line">  tmp = <span class="string">'abc'</span>; <span class="comment">// ReferenceError</span></span><br><span class="line">  <span class="keyword">let</span> tmp;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>ES6 明确规定，如果区块中存在<code>let</code>和<code>const</code>命令，这个区块对这些命令声明的变量，从一开始就形成了封闭作用域。凡是在声明之前就使用这些变量，就会报错。</p>
+<p>暂时性死区的本质就是，只要一进入当前作用域，所要使用的变量就已经存在了，但是不可获取，只有等到声明变量的那一行代码出现，才可以获取和使用该变量。</p>
+<h4 id="不允许重复声明"><a href="#不允许重复声明" class="headerlink" title="不允许重复声明"></a>不允许重复声明</h4><p><code>let</code>不允许在相同作用域内，重复声明同一个变量。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 报错</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">func</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">let</span> a = <span class="number">10</span>;</span><br><span class="line">  <span class="keyword">var</span> a = <span class="number">1</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 报错</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">func</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">let</span> a = <span class="number">10</span>;</span><br><span class="line">  <span class="keyword">let</span> a = <span class="number">1</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="变量提升"><a href="#变量提升" class="headerlink" title="变量提升"></a>变量提升</h3><p>javascript引擎的工作方式是，先解析代码，获取所有被声明的变量，然后再一行一行地运行。这造成的结果，就是所有的变量的声明语句，都会被提升到代码的头部，这就叫做变量提升（hoisting）</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(a);</span><br><span class="line"><span class="keyword">var</span> a = <span class="number">1</span>;</span><br></pre></td></tr></table></figure>
+
+<p>上面代码首先使用console.log方法，在控制台（console）显示变量a的值。这是变量a还没有声明和赋值，所以这是一种错误的做法，但是实际上不会报错。因为存在变量提升，真正运行的是下面的代码。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var a;</span><br><span class="line">console.log(a);</span><br><span class="line">a = 1;</span><br></pre></td></tr></table></figure>
+
+<p>最后的结果是显示undefined，表明变量a已声明，但还未赋值。</p>
+<p>参考：</p>
+<h3 id="垂直居中"><a href="#垂直居中" class="headerlink" title="垂直居中"></a>垂直居中</h3><h4 id="使用绝对定位和负外边距"><a href="#使用绝对定位和负外边距" class="headerlink" title="使用绝对定位和负外边距"></a>使用绝对定位和负外边距</h4><p>父元素使用相对定位，子元素采用绝对定位设置<code>top：50%</code>，<code>margin</code>为自身高度一半的负值</p>
+<h4 id="使用绝对定位和transform"><a href="#使用绝对定位和transform" class="headerlink" title="使用绝对定位和transform"></a>使用绝对定位和transform</h4><p>父元素使用相对定位，子元素采用绝对定位设置<code>top：50%</code>，<code>transform:translate(0,-50%)</code></p>
+<h4 id="使用绝对定位和margin：auto"><a href="#使用绝对定位和margin：auto" class="headerlink" title="使用绝对定位和margin：auto"></a>使用绝对定位和margin：auto</h4><p>父元素使用相对定位，子元素采用绝对定位，<code>top</code>和<code>bottom</code>设置为0，<code>margin:auto</code>，<code>line-heigh</code>设置为元素本身高度</p>
+<h4 id="使用父元素的padding"><a href="#使用父元素的padding" class="headerlink" title="使用父元素的padding"></a>使用父元素的padding</h4><p>已知父子元素的高度，设置padding-top为父元素高度减去子元素高度的一半</p>
+<h4 id="使用flex布局"><a href="#使用flex布局" class="headerlink" title="使用flex布局"></a>使用flex布局</h4><ul>
+<li>设置父元素<code>display:flex</code>,<code>align-items:center</code></li>
+<li>设置父元素<code>display:flex</code>,<code>flex-direction:column</code>,<code>justify-content:center</code></li>
+</ul>
+<h4 id="使用line-height对单行文本居中"><a href="#使用line-height对单行文本居中" class="headerlink" title="使用line-height对单行文本居中"></a>使用line-height对单行文本居中</h4><p>设置<code>line-height</code>为元素高度即可</p>
+<h4 id="使用line-height和vertical-align对图片进行垂直居中"><a href="#使用line-height和vertical-align对图片进行垂直居中" class="headerlink" title="使用line-height和vertical-align对图片进行垂直居中"></a>使用line-height和vertical-align对图片进行垂直居中</h4><p>父元素设置<code>line-height</code>为自身高度，子元素设置<code>vertical-align：middle</code></p>
+<h4 id="使用display：table和vertical-align：middele"><a href="#使用display：table和vertical-align：middele" class="headerlink" title="使用display：table和vertical-align：middele"></a>使用display：table和vertical-align：middele</h4><p>父元素设置<code>display:table</code>,子元素设置<code>diaplay:table-cell</code>,<code>vertical-align:middle</code></p>
+<h3 id="iframe和多窗口通信"><a href="#iframe和多窗口通信" class="headerlink" title="iframe和多窗口通信"></a>iframe和多窗口通信</h3><p>每个iframe元素形成自己的窗口，既有自己的window对象，iframe窗口之中的脚本，可以获得父窗口和子窗口，但是，只有在同源的情况下，父窗口和子窗口才能通信，如果跨域，就无法拿到对方的DOM。</p>
+<p>父窗口执行以下命令</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">document</span></span><br><span class="line">.getElementById(<span class="string">"myIFrame"</span>)</span><br><span class="line">.contentWindow</span><br><span class="line">.document</span><br><span class="line"><span class="comment">// Uncaught DOMException: Blocked a frame from accessing a cross-origin frame.</span></span><br></pre></td></tr></table></figure>
+
+<p>子窗口执行以下命令</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">window</span>.parent.document.body</span><br><span class="line"><span class="comment">// 报错</span></span><br></pre></td></tr></table></figure>
+
+<p>对于完全不同源的网站，目前有两种方法，可以解决跨域窗口的通信问题。</p>
+<ul>
+<li>片段识别符（fragment identifier）</li>
+<li>跨文档通信API（Cross-document messaging）</li>
+</ul>
+<h4 id="片段识别符"><a href="#片段识别符" class="headerlink" title="片段识别符"></a>片段识别符</h4><p>片段标识符（fragment identifier）指的是，URL 的<code>#</code>号后面的部分，比如<code>http://example.com/x.html#fragment</code>的<code>#fragment</code>。如果只是改变片段标识符，页面不会重新刷新。</p>
+<p>父窗口可以把信息，写入子窗口的片段标识符。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> src = originURL + <span class="string">'#'</span> + data;</span><br><span class="line"><span class="built_in">document</span>.getElementById(<span class="string">'myIFrame'</span>).src = src;</span><br></pre></td></tr></table></figure>
+
+<p>子窗口通过监听<code>hashchange</code>事件得到通知。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">window</span>.onhashchange = checkMessage;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">checkMessage</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">var</span> message = <span class="built_in">window</span>.location.hash;</span><br><span class="line">  <span class="comment">// ...</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>同样的，子窗口也可以改变父窗口的片段标识符。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">parent.location.href = target + <span class="string">'#'</span> + hash;</span><br></pre></td></tr></table></figure>
+
+<h4 id="window-postMessage"><a href="#window-postMessage" class="headerlink" title="window.postMessage()"></a>window.postMessage()</h4><p>HTML5 为了解决这个问题，引入了一个全新的API：跨文档通信 API（Cross-document messaging）。</p>
+<p>这个 API 为<code>window</code>对象新增了一个<code>window.postMessage</code>方法，允许跨窗口通信，不论这两个窗口是否同源。举例来说，父窗口<code>aaa.com</code>向子窗口<code>bbb.com</code>发消息，调用<code>postMessage</code>方法就可以了。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 父窗口打开一个子窗口</span></span><br><span class="line"><span class="keyword">var</span> popup = <span class="built_in">window</span>.open(<span class="string">'http://bbb.com'</span>, <span class="string">'title'</span>);</span><br><span class="line"><span class="comment">// 父窗口向子窗口发消息</span></span><br><span class="line">popup.postMessage(<span class="string">'Hello World!'</span>, <span class="string">'http://bbb.com'</span>);</span><br></pre></td></tr></table></figure>
+
+<p><code>postMessage</code>方法的第一个参数是具体的信息内容，第二个参数是接收消息的窗口的源（origin），即“协议 + 域名 + 端口”。也可以设为<code>*</code>，表示不限制域名，向所有窗口发送。</p>
+<p>子窗口向父窗口发送消息的写法类似。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 子窗口向父窗口发消息</span></span><br><span class="line"><span class="built_in">window</span>.opener.postMessage(<span class="string">'Nice to see you'</span>, <span class="string">'http://aaa.com'</span>);</span><br></pre></td></tr></table></figure>
+
+<p>父窗口和子窗口都可以通过<code>message</code>事件，监听对方的消息。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 父窗口和子窗口都可以用下面的代码，</span></span><br><span class="line"><span class="comment">// 监听 message 消息</span></span><br><span class="line"><span class="built_in">window</span>.addEventListener(<span class="string">'message'</span>, <span class="function"><span class="keyword">function</span> (<span class="params">e</span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(e.data);</span><br><span class="line">&#125;,<span class="literal">false</span>);</span><br></pre></td></tr></table></figure>
+
+<p>参考</p>
+<h3 id="深度作用选择器"><a href="#深度作用选择器" class="headerlink" title="深度作用选择器"></a>深度作用选择器</h3><p>如果你希望 <code>scoped</code> 样式中的一个选择器能够作用得“更深”，例如影响子组件，你可以使用 <code>&gt;&gt;&gt;</code> 操作符：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">style</span> <span class="attr">scoped</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="undefined">.a &gt;&gt;&gt; .b &#123; /* ... */ &#125;</span></span><br><span class="line"><span class="undefined"></span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>上述代码将会编译成：</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.a</span><span class="selector-attr">[data-v-f3f3eg9]</span> <span class="selector-class">.b</span> &#123; <span class="comment">/* ... */</span> &#125;</span><br></pre></td></tr></table></figure>
+
+<p>有些像 Sass 之类的预处理器无法正确解析 <code>&gt;&gt;&gt;</code>。这种情况下你可以使用 <code>/deep/</code> 或 <code>::v-deep</code> 操作符取而代之——两者都是 <code>&gt;&gt;&gt;</code> 的别名，同样可以正常工作。</p>
+<h3 id="闭包"><a href="#闭包" class="headerlink" title="闭包"></a>闭包</h3><h4 id="变量的作用域"><a href="#变量的作用域" class="headerlink" title="变量的作用域"></a>变量的作用域</h4><p>变量的作用域分为全局变量和局部变量。<code>javascript</code>可以在函数内部直接读取全局变量。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">　<span class="keyword">var</span> n=<span class="number">999</span>;</span><br><span class="line"></span><br><span class="line">　<span class="function"><span class="keyword">function</span> <span class="title">f1</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">　　　　alert(n);</span><br><span class="line">　&#125;</span><br><span class="line"></span><br><span class="line">　f1(); <span class="comment">// 999</span></span><br></pre></td></tr></table></figure>
+
+<p>另一方面，在函数外部无法读取函数内的局部变量。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">　　<span class="function"><span class="keyword">function</span> <span class="title">f1</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">　　　　<span class="keyword">var</span> n=<span class="number">999</span>;</span><br><span class="line">　　&#125;</span><br><span class="line"></span><br><span class="line">　　alert(n); <span class="comment">// error</span></span><br></pre></td></tr></table></figure>
+
+<p>在函数内部声明局部变量时，不使用var 或者let const，则会被当做全局变量。</p>
+<h4 id="什么是闭包"><a href="#什么是闭包" class="headerlink" title="什么是闭包"></a>什么是闭包</h4><p>闭包就是能够读取其他函数内部变量的函数。由于在<code>Javascrip</code>t语言中，只有函数内部的子函数才能读取局部变量，因此可以把闭包简单理解成”定义在一个函数内部的函数”。</p>
+<p>所以，在本质上，闭包就是将函数内部和函数外部连接起来的一座桥梁。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">　　<span class="function"><span class="keyword">function</span> <span class="title">f1</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line"></span><br><span class="line">　　　　<span class="keyword">var</span> n=<span class="number">999</span>;</span><br><span class="line"></span><br><span class="line">　　　　<span class="function"><span class="keyword">function</span> <span class="title">f2</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">　　　　　　alert(n); </span><br><span class="line">　　　　&#125;</span><br><span class="line"></span><br><span class="line">　　　　<span class="keyword">return</span> f2;</span><br><span class="line"></span><br><span class="line">　　&#125;</span><br><span class="line"></span><br><span class="line">　　<span class="keyword">var</span> result=f1();</span><br><span class="line"></span><br><span class="line">　　result(); <span class="comment">// 999</span></span><br></pre></td></tr></table></figure>
+
+<p>f2()被包含在f1()内，所以f1内部的所有局部变量，对f2都是可见的。但是反过来就不行，f2内部的局部变量，对f1就是不可见的。这就是Javascript语言特有的”链式作用域”结构（chain scope），子对象会一级一级地向上寻找所有父对象的变量。所以，父对象的所有变量，对子对象都是可见的，反之则不成立。既然f2可以读取f1中的局部变量，那么只要把f2作为返回值，我们就可以读取f1的内部变量了。</p>
+<h4 id="闭包的用途"><a href="#闭包的用途" class="headerlink" title="闭包的用途"></a>闭包的用途</h4><p>它的最大用处有两个，一个是前面提到的可以读取函数内部的变量，另一个就是让这些变量的值始终保持在内存中。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">　　<span class="function"><span class="keyword">function</span> <span class="title">f1</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line"></span><br><span class="line">　　　　<span class="keyword">var</span> n=<span class="number">999</span>;</span><br><span class="line"></span><br><span class="line">　　　　nAdd=<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;n+=<span class="number">1</span>&#125;</span><br><span class="line"></span><br><span class="line">　　　　<span class="function"><span class="keyword">function</span> <span class="title">f2</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">　　　　　　alert(n);</span><br><span class="line">　　　　&#125;</span><br><span class="line"></span><br><span class="line">　　　　<span class="keyword">return</span> f2;</span><br><span class="line"></span><br><span class="line">　　&#125;</span><br><span class="line"></span><br><span class="line">　　<span class="keyword">var</span> result=f1();</span><br><span class="line"></span><br><span class="line">　　result(); <span class="comment">// 999</span></span><br><span class="line"></span><br><span class="line">　　nAdd();</span><br><span class="line"></span><br><span class="line">　　result(); <span class="comment">// 1000</span></span><br></pre></td></tr></table></figure>
+
+<p>在这段代码中，result实际上就是闭包f2函数。它一共运行了两次，第一次的值是999，第二次的值是1000。这证明了，函数f1中的局部变量n一直保存在内存中，并没有在f1调用后被自动清除。</p>
+<p>为什么会这样呢？原因就在于f1是f2的父函数，而f2被赋给了一个全局变量，这导致f2始终在内存中，而f2的存在依赖于f1，因此f1也始终在内存中，不会在调用结束后，被垃圾回收机制（garbage collection）回收。</p>
+<p>这段代码中另一个值得注意的地方，就是”nAdd=function(){n+=1}”这一行，首先在nAdd前面没有使用var关键字，因此nAdd是一个全局变量，而不是局部变量。其次，nAdd的值是一个匿名函数（anonymous function），而这个匿名函数本身也是一个闭包，所以nAdd相当于是一个setter，可以在函数外部对函数内部的局部变量进行操作。</p>
+<h4 id="使用闭包的注意点"><a href="#使用闭包的注意点" class="headerlink" title="使用闭包的注意点"></a>使用闭包的注意点</h4><ul>
+<li>由于闭包会使得函数中的变量都被保存在内存中，内存消耗很大，所以不能滥用闭包，否则会造成网页的性能问题，在IE中可能导致内存泄露。解决方法是，在退出函数之前，将不使用的局部变量全部删除。</li>
+<li>闭包会在父函数外部，改变父函数内部变量的值。所以，如果你把父函数当作对象（object）使用，把闭包当作它的公用方法（Public Method），把内部变量当作它的私有属性（private value），这时一定要小心，不要随便改变父函数内部变量的值。</li>
+</ul>
+<h3 id="节流和防抖"><a href="#节流和防抖" class="headerlink" title="节流和防抖"></a>节流和防抖</h3><h4 id="什么是节流（throttle）"><a href="#什么是节流（throttle）" class="headerlink" title="什么是节流（throttle）"></a>什么是节流（throttle）</h4><p>节流就是指在一段时间内对相同的事件只处理一次，避免短时内重复处理多次造成内存浪费引起程序卡顿。</p>
+<p>有两种实现方式</p>
+<h5 id="时间戳"><a href="#时间戳" class="headerlink" title="时间戳"></a>时间戳</h5><p>主要是<strong>记录上一次执行的时间戳</strong>，然后与当前时间戳进行比较，若超过指定的时间则执行一次；</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">throttle</span>(<span class="params">fn, delay</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">let</span> last = <span class="number">0</span> <span class="comment">// 这样能保证第一次触发能够立即被执行</span></span><br><span class="line">  <span class="keyword">return</span> <span class="function"><span class="keyword">function</span> <span class="title">throttle_fn</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(<span class="built_in">Date</span>.now() - last &gt;= delay) &#123;</span><br><span class="line">      fn.apply(<span class="keyword">this</span>, <span class="built_in">arguments</span>)</span><br><span class="line">      last = <span class="built_in">Date</span>.now()</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h5 id="计数器"><a href="#计数器" class="headerlink" title="计数器"></a>计数器</h5><p>该方法主要利用计数器的标记进行节流，计时器<strong>在执行完一次操作之前标记不会被处理</strong>，因此在规定时间内的其它操作都不会被执行，从而达到了规定时间内只执行一次的目的。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">throttle2</span>(<span class="params">fn, delay</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">let</span> last = <span class="literal">null</span></span><br><span class="line">  <span class="keyword">return</span> <span class="function"><span class="keyword">function</span> <span class="title">throttle_fn</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(last === <span class="literal">null</span>) &#123;</span><br><span class="line">      last = setTimeout(<span class="function"><span class="params">()</span> =&gt;</span> &#123;</span><br><span class="line">        fn.apply(<span class="keyword">this</span>, <span class="built_in">arguments</span>)</span><br><span class="line">        last = <span class="literal">null</span> <span class="comment">// 清除已执行的计时器标记</span></span><br><span class="line">      &#125;, delay)</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="什么是防抖"><a href="#什么是防抖" class="headerlink" title="什么是防抖"></a>什么是防抖</h4><p>函数的目的是为了<strong>避免相同的事件触发的频率过快</strong>，即连续两次事件触发的执行时间之差<strong>不能低于某个限定值</strong>，相当于控制了事件执行的频率。</p>
+<p>可以利用计时器延迟事件的执行来实现：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">debounce</span>(<span class="params">fn, delay</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">let</span> last = <span class="literal">null</span></span><br><span class="line">  <span class="keyword">return</span> <span class="function"><span class="keyword">function</span> <span class="title">debounce_fn</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(last) &#123;</span><br><span class="line">      clearTimeout(last) <span class="comment">// 若此时距离上次执行的时间小于delay，就相当于取消了前一次执行</span></span><br><span class="line">    &#125;</span><br><span class="line">    last = setTimeout(<span class="function"><span class="params">()</span> =&gt;</span> &#123;</span><br><span class="line">      fn.apply(<span class="keyword">this</span>, <span class="built_in">arguments</span>)</span><br><span class="line">    &#125;, delay) <span class="comment">// 事件延迟执行，只有当后一次触发与当前触发≥delay时才会被执行！</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>由于每次触发都会执行<code>clearTimeout</code>，因此<strong>若前一次延迟操作没有被执行则会被自动取消</strong>，即前一次触发与后一次触发间隔时间小于规定间隔时间时前一次触发会被自动取消执行；</p>
+</section>
+    <!-- Tags START -->
+    
+    <!-- Tags END -->
+    <!-- NAV START -->
+    
+  <div class="nav-container">
+    <!-- reverse left and right to put prev and next in a more logic postition -->
+    
+      <a class="nav-left" href="/dusuwen/2019/05/28/对比对象是否相等/">
+        <span class="nav-arrow">← </span>
+        
+          对比对象是否相等
+        
+      </a>
+    
+    
+      <a class="nav-right" href="/dusuwen/2019/05/31/canvas学习笔记/">
+        
+          canvas学习笔记
+        
+        <span class="nav-arrow"> →</span>
+      </a>
+    
+  </div>
+
+    <!-- NAV END -->
+    <!-- 打赏 START -->
+    
+    <!-- 打赏 END -->
+    <!-- 二维码 START -->
+    
+    <!-- 二维码 END -->
+    
+      <!-- No Comment -->
+    
+  </article>
+  <!-- Article END -->
+  <!-- Catalog START -->
+  
+    <aside class="catalog-container">
+  <div class="toc-main">
+    <strong class="toc-title">Catalog</strong>
+    
+      <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#Javascript的几种数据类型"><span class="toc-nav-text">Javascript的几种数据类型</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#如何判断一个Javascript数据类型"><span class="toc-nav-text">如何判断一个Javascript数据类型</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#typeof-操作符"><span class="toc-nav-text">typeof 操作符</span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#instanceof运算符"><span class="toc-nav-text">instanceof运算符</span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#Object-prototype-toString"><span class="toc-nav-text">Object.prototype.toString</span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#constructor-NaN"><span class="toc-nav-text">constructor</span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#Array-isArray"><span class="toc-nav-text">Array.isArray()</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#Vue实现数据绑定的原理"><span class="toc-nav-text">Vue实现数据绑定的原理</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#为什么vue-组件里-data-必须是一个function"><span class="toc-nav-text">为什么vue 组件里 data 必须是一个function</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#Proxy相比Object-defineProperty的优势是什么"><span class="toc-nav-text">Proxy相比Object.defineProperty的优势是什么</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#Object-defineProperty的问题主要有三个"><span class="toc-nav-text">Object.defineProperty的问题主要有三个</span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#Proxy的几个特点"><span class="toc-nav-text">Proxy的几个特点</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#computed与methods"><span class="toc-nav-text">computed与methods</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#http状态码"><span class="toc-nav-text">http状态码</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#cookie和session-的区别"><span class="toc-nav-text">cookie和session 的区别</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#Promise-链式调用"><span class="toc-nav-text">Promise 链式调用</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#Vue中对Array的检测做了什么特殊处理"><span class="toc-nav-text">Vue中对Array的检测做了什么特殊处理</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#简述同源策略"><span class="toc-nav-text">简述同源策略</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#F5-和Ctrl-F5的区别"><span class="toc-nav-text">F5 和Ctrl+F5的区别</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#请求中的size"><span class="toc-nav-text">请求中的size</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-5"><a class="toc-nav-link" href="#from-memory-cache"><span class="toc-nav-text">from memory cache</span></a></li><li class="toc-nav-item toc-nav-level-5"><a class="toc-nav-link" href="#from-disk-cache"><span class="toc-nav-text">from disk cache</span></a></li><li class="toc-nav-item toc-nav-level-5"><a class="toc-nav-link" href="#资源的大小"><span class="toc-nav-text">资源的大小</span></a></li><li class="toc-nav-item toc-nav-level-5"><a class="toc-nav-link" href="#from-ServiceWorker"><span class="toc-nav-text">from ServiceWorker</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#造成size多重情况的原因"><span class="toc-nav-text">造成size多重情况的原因</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-5"><a class="toc-nav-link" href="#F5-在chrome中"><span class="toc-nav-text">F5 在chrome中</span></a></li><li class="toc-nav-item toc-nav-level-5"><a class="toc-nav-link" href="#F5-在firefox中"><span class="toc-nav-text">F5 在firefox中</span></a></li><li class="toc-nav-item toc-nav-level-5"><a class="toc-nav-link" href="#Ctrl-F5-在chrome和firefox中"><span class="toc-nav-text">Ctrl+F5 在chrome和firefox中</span></a></li></ol></li></ol></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#内存管理"><span class="toc-nav-text">内存管理</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#基础数据类型与栈内存"><span class="toc-nav-text">基础数据类型与栈内存</span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#引用数据类型与堆内存"><span class="toc-nav-text">引用数据类型与堆内存</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#浅拷贝和深拷贝"><span class="toc-nav-text">浅拷贝和深拷贝</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#基本类型发生复制"><span class="toc-nav-text">基本类型发生复制</span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#引用类型发生复制"><span class="toc-nav-text">引用类型发生复制</span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#浅拷贝"><span class="toc-nav-text">浅拷贝</span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#深拷贝"><span class="toc-nav-text">深拷贝</span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#如何实现深拷贝"><span class="toc-nav-text">如何实现深拷贝</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-5"><a class="toc-nav-link" href="#数组"><span class="toc-nav-text">数组</span></a></li><li class="toc-nav-item toc-nav-level-5"><a class="toc-nav-link" href="#对象"><span class="toc-nav-text">对象</span></a></li></ol></li></ol></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#let和var-命令"><span class="toc-nav-text">let和var 命令</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#基本用法"><span class="toc-nav-text">基本用法</span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#不存在变量提升"><span class="toc-nav-text">不存在变量提升</span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#暂时性死区（temporal-dead-zone，简称TDZ）"><span class="toc-nav-text">暂时性死区（temporal dead zone，简称TDZ）</span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#不允许重复声明"><span class="toc-nav-text">不允许重复声明</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#变量提升"><span class="toc-nav-text">变量提升</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#垂直居中"><span class="toc-nav-text">垂直居中</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#使用绝对定位和负外边距"><span class="toc-nav-text">使用绝对定位和负外边距</span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#使用绝对定位和transform"><span class="toc-nav-text">使用绝对定位和transform</span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#使用绝对定位和margin：auto"><span class="toc-nav-text">使用绝对定位和margin：auto</span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#使用父元素的padding"><span class="toc-nav-text">使用父元素的padding</span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#使用flex布局"><span class="toc-nav-text">使用flex布局</span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#使用line-height对单行文本居中"><span class="toc-nav-text">使用line-height对单行文本居中</span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#使用line-height和vertical-align对图片进行垂直居中"><span class="toc-nav-text">使用line-height和vertical-align对图片进行垂直居中</span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#使用display：table和vertical-align：middele"><span class="toc-nav-text">使用display：table和vertical-align：middele</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#iframe和多窗口通信"><span class="toc-nav-text">iframe和多窗口通信</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#片段识别符"><span class="toc-nav-text">片段识别符</span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#window-postMessage"><span class="toc-nav-text">window.postMessage()</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#深度作用选择器"><span class="toc-nav-text">深度作用选择器</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#闭包"><span class="toc-nav-text">闭包</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#变量的作用域"><span class="toc-nav-text">变量的作用域</span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#什么是闭包"><span class="toc-nav-text">什么是闭包</span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#闭包的用途"><span class="toc-nav-text">闭包的用途</span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#使用闭包的注意点"><span class="toc-nav-text">使用闭包的注意点</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#节流和防抖"><span class="toc-nav-text">节流和防抖</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#什么是节流（throttle）"><span class="toc-nav-text">什么是节流（throttle）</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-5"><a class="toc-nav-link" href="#时间戳"><span class="toc-nav-text">时间戳</span></a></li><li class="toc-nav-item toc-nav-level-5"><a class="toc-nav-link" href="#计数器"><span class="toc-nav-text">计数器</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#什么是防抖"><span class="toc-nav-text">什么是防抖</span></a></li></ol></li></ol>
+    
+  </div>
+</aside>
+  
+  <!-- Catalog END -->
+</main>
+
+<script>
+  (function () {
+    var url = 'https://dusuwen.github.io/dusuwen/2019/05/30/记一次面试/';
+    var banner = ''
+    if (banner !== '' && banner !== 'undefined' && banner !== 'null') {
+      $('#article-banner').css({
+        'background-image': 'url(' + banner + ')'
+      })
+    } else {
+      $('#article-banner').geopattern(url)
+    }
+    $('.header').removeClass('fixed-header')
+
+    // error image
+    $(".markdown-content img").on('error', function() {
+      $(this).attr('src', 'http://file.muyutech.com/error-img.png')
+      $(this).css({
+        'cursor': 'default'
+      })
+    })
+
+    // zoom image
+    $(".markdown-content img").on('click', function() {
+      var src = $(this).attr('src')
+      if (src !== 'http://file.muyutech.com/error-img.png') {
+        var imageW = $(this).width()
+        var imageH = $(this).height()
+
+        var zoom = ($(window).width() * 0.95 / imageW).toFixed(2)
+        zoom = zoom < 1 ? 1 : zoom
+        zoom = zoom > 2 ? 2 : zoom
+        var transY = (($(window).height() - imageH) / 2).toFixed(2)
+
+        $('body').append('<div class="image-view-wrap"><div class="image-view-inner"><img src="'+ src +'" /></div></div>')
+        $('.image-view-wrap').addClass('wrap-active')
+        $('.image-view-wrap img').css({
+          'width': `${imageW}`,
+          'transform': `translate3d(0, ${transY}px, 0) scale3d(${zoom}, ${zoom}, 1)`
+        })
+        $('html').css('overflow', 'hidden')
+
+        $('.image-view-wrap').on('click', function() {
+          $(this).remove()
+          $('html').attr('style', '')
+        })
+      }
+    })
+  })();
+</script>
+
+
+
+
+
+
+
+    <div class="scroll-top">
+  <span class="arrow-icon"></span>
+</div>
+    <footer class="app-footer">
+  <p class="copyright">
+    &copy; 2020 | Proudly powered by <a href="https://hexo.io" target="_blank">Hexo</a>
+    <br>
+    Theme by <a href="https://github.com/yanm1ng">yanm1ng</a>
+  </p>
+</footer>
+
+<script>
+  function async(u, c) {
+    var d = document, t = 'script',
+      o = d.createElement(t),
+      s = d.getElementsByTagName(t)[0];
+    o.src = u;
+    if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+    s.parentNode.insertBefore(o, s);
+  }
+</script>
+<script>
+  async("//cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js", function(){
+    FastClick.attach(document.body);
+  })
+</script>
+
+<script>
+  var hasLine = 'true';
+  async("//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js", function(){
+    $('figure pre').each(function(i, block) {
+      var figure = $(this).parents('figure');
+      if (hasLine === 'false') {
+        figure.find('.gutter').hide();
+      }
+      var lang = figure.attr('class').split(' ')[1] || 'code';
+      var codeHtml = $(this).html();
+      var codeTag = document.createElement('code');
+      codeTag.className = lang;
+      codeTag.innerHTML = codeHtml;
+      $(this).attr('class', '').empty().html(codeTag);
+      figure.attr('data-lang', lang.toUpperCase());
+      hljs.highlightBlock(block);
+    });
+  })
+</script>
+<!-- Baidu Tongji -->
+
+<script src="/dusuwen/js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+  <head><meta name="generator" content="Hexo 3.9.0">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+  <meta name="description" content="DuSuWen&#39;s blog">
+  <meta name="keyword" content="hexo-theme, vuejs">
+  
+    <link rel="shortcut icon" href="/dusuwen/css/images/logo.png">
+  
+  <title>
+    
+      vue 浏览器兼容 | 博客
+    
+  </title>
+  <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="//cdnjs.cloudflare.com/ajax/libs/nprogress/0.2.0/nprogress.min.css" rel="stylesheet">
+  <link href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/tomorrow.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/dusuwen/css/style.css">
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/geopattern/1.2.3/js/geopattern.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/nprogress/0.2.0/nprogress.min.js"></script>
+  
+  
+  
+  
+    <!-- MathJax support START -->
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <!-- MathJax support END -->
+  
+
+
+</head>
+<div class="wechat-share">
+  <img src="/css/images/logo.png">
+</div>
+
+  <body>
+    <header class="header fixed-header">
+  <div class="header-container">
+    <a class="home-link" href="/dusuwen/">
+      <div class="logo"></div>
+      <span>博客</span>
+    </a>
+    <ul class="right-list">
+      
+        <li class="list-item">
+          
+            <a href="/dusuwen/" class="item-link">Home</a>
+          
+        </li>
+      
+        <li class="list-item">
+          
+            <a href="/dusuwen/tags/" class="item-link">Tags</a>
+          
+        </li>
+      
+        <li class="list-item">
+          
+            <a href="/dusuwen/archives/" class="item-link">Archives</a>
+          
+        </li>
+      
+        <li class="list-item">
+          
+            <a href="/dusuwen/project/" class="item-link">Projects</a>
+          
+        </li>
+      
+        <li class="list-item">
+          
+            <a href="/dusuwen/about/" class="item-link">About</a>
+          
+        </li>
+      
+    </ul>
+    <div class="menu">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </div>
+    <div class="menu-mask">
+      <ul class="menu-list">
+        
+          <li class="menu-item">
+            
+              <a href="/dusuwen/" class="menu-link">Home</a>
+            
+          </li>
+        
+          <li class="menu-item">
+            
+              <a href="/dusuwen/tags/" class="menu-link">Tags</a>
+            
+          </li>
+        
+          <li class="menu-item">
+            
+              <a href="/dusuwen/archives/" class="menu-link">Archives</a>
+            
+          </li>
+        
+          <li class="menu-item">
+            
+              <a href="/dusuwen/project/" class="menu-link">Projects</a>
+            
+          </li>
+        
+          <li class="menu-item">
+            
+              <a href="/dusuwen/about/" class="menu-link">About</a>
+            
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</header>
+
+    <div id="article-banner">
+  <h2>vue 浏览器兼容</h2>
+  <p class="post-date">2020-07-14</p>
+  <div class="arrow-down">
+    <a href="javascript:;"></a>
+  </div>
+</div>
+<main class="app-body flex-box">
+  <!-- Article START -->
+  <article class="post-article">
+    <section class="markdown-content"><h3 id="browserslist"><a href="#browserslist" class="headerlink" title="browserslist"></a>browserslist</h3><p>在<code>package.json</code>中有一个<code>browserslis</code>配置项是用来配置该工程的目标浏览器范围。</p>
+<p>使用<code>@vue/cli</code>初始化的工程该配置项默认为<code>[&#39;&gt; 1%&#39;,&#39;last 2 versions&#39;]</code>,在工程路径下执行<code>npx browserslist</code>可以列出该配置支持的浏览器列表。</p>
+<p>同时这个值会被 <a href="https://new.babeljs.io/docs/en/next/babel-preset-env.html" target="_blank" rel="noopener">@babel/preset-env</a> 和 <a href="https://github.com/postcss/autoprefixer" target="_blank" rel="noopener">Autoprefixer</a> 用来确定需要转译的 JavaScript 特性和需要添加的 CSS 浏览器前缀。</p>
+<h3 id="polyfill"><a href="#polyfill" class="headerlink" title="polyfill"></a>polyfill</h3><p><code>polyfill</code>可以理解为补丁，现代 es6 语法在不支持的浏览器上可以通过补丁代运行，比如 <code>=&gt;</code>箭头函数在 ie 上无法运行，polyfill可以把箭头函数转移为 es5 的语法实现。</p>
+<h3 id="什么时候需要用到-polyfill"><a href="#什么时候需要用到-polyfill" class="headerlink" title="什么时候需要用到 polyfill"></a>什么时候需要用到 polyfill</h3><p>很不幸，如果你是一个始终使用最新<code>ECMAScript</code>的开发者，你的项目离不开 polyfill。合理配置 polyfill 可以保持开发时使用最新最爽最便捷的语法还能兼容不同版本浏览器的运行。</p>
+<h3 id="那些代码需要使用-polyfill"><a href="#那些代码需要使用-polyfill" class="headerlink" title="那些代码需要使用 polyfill"></a>那些代码需要使用 polyfill</h3><p>有两部分代码需要使用 polyfill 来转移，分别是 <code>/src</code> 下的源码还有<code>node_modules</code>下的依赖。</p>
+<h4 id="src"><a href="#src" class="headerlink" title="src"></a>src</h4><p><code>/src</code>下是工程里我们存放源码的地方，这里的代码主要是开发者所写，编写时很容易使用新语法，所以需要转译。</p>
+<h4 id="node-modules"><a href="#node-modules" class="headerlink" title="node_modules"></a>node_modules</h4><p><code>/node_modules</code>是工程的依赖，很不幸我们不能指定依赖采用什么语言，如果最终编译后源码转译而依赖没有转译一样会遇到兼容性问题。</p>
+<h3 id="如何使用-polyfill"><a href="#如何使用-polyfill" class="headerlink" title="如何使用 polyfill"></a>如何使用 polyfill</h3><h4 id="babel-config-js"><a href="#babel-config-js" class="headerlink" title="babel.config.js"></a>babel.config.js</h4><p>使用 Vue Cli 创建的工程会有一个 <code>babel.config.js</code> 文件用来配置需要转译的范围，默认为<code>useBuiltIns:&#39;usage&#39;</code>，polyfill 会根据 browserslist 自动检测源码中需要转译的部分，确保最终包里 polyfill 数量的最小化。</p>
+<h4 id="vue-config-js"><a href="#vue-config-js" class="headerlink" title="vue.config.js"></a>vue.config.js</h4><p>如果有依赖需要 polyfill ，则需要在 <code>vue.config.js</code> 中增加<code>transpileDependencies</code>项指定哪些依赖需要被转译。</p>
+<p>大多数情况下使用的依赖过多，则可以设置为<code>[&#39;*&#39;]</code>，这样所有的依赖最终都会转译。</p>
+<h3 id="避免麻烦的最好方法"><a href="#避免麻烦的最好方法" class="headerlink" title="避免麻烦的最好方法"></a>避免麻烦的最好方法</h3><p>避免麻烦的最好方法往往是简单粗暴但却最不优雅的。</p>
+<ul>
+<li>在<code>babel.config.js</code>中改<code>usage</code>为<code>entry</code></li>
+<li>同时在<code>main.js</code>入口位置增加<code>import &#39;core-js/stabl&#39;</code> 和 <code>import &#39;regenerator-runtime/runtime&#39;</code>（如果提示没有安装<code>core-js</code>，执行安装 <code>npm i core-js@3</code>）</li>
+<li>在<code>vue.config.js</code>中设置<code>transpileDeoendencies</code>为<code>[&#39;*&#39;]</code></li>
+</ul>
+<p>这样做之后，所有的源码和依赖都会根据browserslist中的目标浏览器范围被polyfill转译为可执行的 es5 代码。</p>
+<p>缺点就是开发时编译会慢，最终包会更大一些。</p>
+</section>
+    <!-- Tags START -->
+    
+      <div class="tags">
+        <span>Tags:</span>
+        
+  <a href="/dusuwen/dusuwen/tags#Vue" >
+    <span class="tag-code">Vue</span>
+  </a>
+
+      </div>
+    
+    <!-- Tags END -->
+    <!-- NAV START -->
+    
+  <div class="nav-container">
+    <!-- reverse left and right to put prev and next in a more logic postition -->
+    
+      <a class="nav-left" href="/dusuwen/2019/09/08/hello-world/">
+        <span class="nav-arrow">← </span>
+        
+          Hello World
+        
+      </a>
+    
+    
+  </div>
+
+    <!-- NAV END -->
+    <!-- 打赏 START -->
+    
+    <!-- 打赏 END -->
+    <!-- 二维码 START -->
+    
+    <!-- 二维码 END -->
+    
+      <!-- No Comment -->
+    
+  </article>
+  <!-- Article END -->
+  <!-- Catalog START -->
+  
+    <aside class="catalog-container">
+  <div class="toc-main">
+    <strong class="toc-title">Catalog</strong>
+    
+      <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#browserslist"><span class="toc-nav-text">browserslist</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#polyfill"><span class="toc-nav-text">polyfill</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#什么时候需要用到-polyfill"><span class="toc-nav-text">什么时候需要用到 polyfill</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#那些代码需要使用-polyfill"><span class="toc-nav-text">那些代码需要使用 polyfill</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#src"><span class="toc-nav-text">src</span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#node-modules"><span class="toc-nav-text">node_modules</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#如何使用-polyfill"><span class="toc-nav-text">如何使用 polyfill</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#babel-config-js"><span class="toc-nav-text">babel.config.js</span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#vue-config-js"><span class="toc-nav-text">vue.config.js</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#避免麻烦的最好方法"><span class="toc-nav-text">避免麻烦的最好方法</span></a></li></ol>
+    
+  </div>
+</aside>
+  
+  <!-- Catalog END -->
+</main>
+
+<script>
+  (function () {
+    var url = 'https://dusuwen.github.io/dusuwen/2020/07/14/vue-浏览器兼容/';
+    var banner = ''
+    if (banner !== '' && banner !== 'undefined' && banner !== 'null') {
+      $('#article-banner').css({
+        'background-image': 'url(' + banner + ')'
+      })
+    } else {
+      $('#article-banner').geopattern(url)
+    }
+    $('.header').removeClass('fixed-header')
+
+    // error image
+    $(".markdown-content img").on('error', function() {
+      $(this).attr('src', 'http://file.muyutech.com/error-img.png')
+      $(this).css({
+        'cursor': 'default'
+      })
+    })
+
+    // zoom image
+    $(".markdown-content img").on('click', function() {
+      var src = $(this).attr('src')
+      if (src !== 'http://file.muyutech.com/error-img.png') {
+        var imageW = $(this).width()
+        var imageH = $(this).height()
+
+        var zoom = ($(window).width() * 0.95 / imageW).toFixed(2)
+        zoom = zoom < 1 ? 1 : zoom
+        zoom = zoom > 2 ? 2 : zoom
+        var transY = (($(window).height() - imageH) / 2).toFixed(2)
+
+        $('body').append('<div class="image-view-wrap"><div class="image-view-inner"><img src="'+ src +'" /></div></div>')
+        $('.image-view-wrap').addClass('wrap-active')
+        $('.image-view-wrap img').css({
+          'width': `${imageW}`,
+          'transform': `translate3d(0, ${transY}px, 0) scale3d(${zoom}, ${zoom}, 1)`
+        })
+        $('html').css('overflow', 'hidden')
+
+        $('.image-view-wrap').on('click', function() {
+          $(this).remove()
+          $('html').attr('style', '')
+        })
+      }
+    })
+  })();
+</script>
+
+
+
+
+
+
+
+    <div class="scroll-top">
+  <span class="arrow-icon"></span>
+</div>
+    <footer class="app-footer">
+  <p class="copyright">
+    &copy; 2020 | Proudly powered by <a href="https://hexo.io" target="_blank">Hexo</a>
+    <br>
+    Theme by <a href="https://github.com/yanm1ng">yanm1ng</a>
+  </p>
+</footer>
+
+<script>
+  function async(u, c) {
+    var d = document, t = 'script',
+      o = d.createElement(t),
+      s = d.getElementsByTagName(t)[0];
+    o.src = u;
+    if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+    s.parentNode.insertBefore(o, s);
+  }
+</script>
+<script>
+  async("//cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js", function(){
+    FastClick.attach(document.body);
+  })
+</script>
+
+<script>
+  var hasLine = 'true';
+  async("//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js", function(){
+    $('figure pre').each(function(i, block) {
+      var figure = $(this).parents('figure');
+      if (hasLine === 'false') {
+        figure.find('.gutter').hide();
+      }
+      var lang = figure.attr('class').split(' ')[1] || 'code';
+      var codeHtml = $(this).html();
+      var codeTag = document.createElement('code');
+      codeTag.className = lang;
+      codeTag.innerHTML = codeHtml;
+      $(this).attr('class', '').empty().html(codeTag);
+      figure.attr('data-lang', lang.toUpperCase());
+      hljs.highlightBlock(block);
+    });
+  })
+</script>
+<!-- Baidu Tongji -->
+
+<script src="/dusuwen/js/script.js"></script>
+  </body>
+</html>
