@@ -8,7 +8,7 @@ tags:
 ### Why
 
 因为要在公司电脑上使用公司的gitlab同时还需要使用自己的github，所以需要根据项目区分commit时的账户。
-
+<!-- more -->
 #### 生成ssh秘钥
 
 仅配置github的秘钥，打开.ssh文件夹，

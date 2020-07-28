@@ -7,7 +7,7 @@ tags:
 ## Cloc简介
 
 Cloc是一款使用Perl语言开发的开源代码统计工具，支持多平台使用、多语言识别，能够计算指定目标文件或文件夹中的文件数（files）、空白行数（blank）、注释行数（comment）和代码行数（code）。
-
+<!-- more -->
 ## 安装和环境需求
 
 首先Node.js和Npm环境比不可少，其次需要Perl环境，可以在[ActiveState](https://www.activestate.com/products/activeperl/downloads/)中免费下载安装

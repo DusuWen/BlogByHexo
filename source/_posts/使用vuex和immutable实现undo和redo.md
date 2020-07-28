@@ -11,7 +11,7 @@ tags:
 ### 什么是immutable.js
 
 [immutable.js](https://immutable-js.github.io/immutable-js/)就是一旦创建，就不能再被更改的数据。对 Immutable 对象的任何修改或添加删除操作都会返回一个新的 Immutable 对象。Immutable 实现的原理是 **Persistent Data Structure（持久化数据结构）**，也就是使用旧数据创建新数据时，要保证旧数据同时可用且不变。
-
+<!-- more -->
 ## 设计过程
 
 看介绍，immutable很厉害，但是这个是与React搭配可以发挥最大价值的武器，在网上搜索一番，也没有找到配合Vuex使用的例子。所以，最后实现undo还是只能采用普通的array方法。

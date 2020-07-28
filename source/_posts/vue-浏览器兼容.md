@@ -11,7 +11,7 @@ tags:
 使用`@vue/cli`初始化的工程该配置项默认为`['> 1%','last 2 versions']`,在工程路径下执行`npx browserslist`可以列出该配置支持的浏览器列表。
 
 同时这个值会被 [@babel/preset-env](https://new.babeljs.io/docs/en/next/babel-preset-env.html) 和 [Autoprefixer](https://github.com/postcss/autoprefixer) 用来确定需要转译的 JavaScript 特性和需要添加的 CSS 浏览器前缀。
-
+<!-- more -->
 ### polyfill
 
 `polyfill`可以理解为补丁，现代 es6 语法在不支持的浏览器上可以通过补丁代运行，比如 `=>`箭头函数在 ie 上无法运行，polyfill可以把箭头函数转移为 es5 的语法实现。
