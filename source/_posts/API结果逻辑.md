@@ -18,7 +18,7 @@ tags:
 * 在tmdb用季数和集数获取该集的播放日期
 * 使用播放日期与当前日期进行计算得出倒数日
 * 使用tvdb获取airs days of week和airsTime
-
+<!-- more -->
 ### 问题
 
 * 期间使用了imdb的id，有些剧集没有此id，导致调用过程中断

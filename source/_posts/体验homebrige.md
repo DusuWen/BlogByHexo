@@ -21,7 +21,7 @@ sudo apt install git
 ```
 git clone <https://github.com/nodejs/node.git>
 ```
-
+<!-- more -->
 安装homebridge
 
 ```

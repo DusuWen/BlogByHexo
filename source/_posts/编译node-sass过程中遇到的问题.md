@@ -8,9 +8,8 @@ tags:
 安装编译工具
 
 `npm install -g node-gyp`
-
+<!-- more -->
 之后安装
-
 `npm install --global --production windows-build-tools`
 
 如果编译还不成功可以修改vc++库的版本

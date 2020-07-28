@@ -20,7 +20,7 @@ C:\Program Files\MongoDB\Server\3.4\bin\mongo.exe
 ```
 Control+C
 ```
-
+<!-- more -->
 创建的目录
 
 ```

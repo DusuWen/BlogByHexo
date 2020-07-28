@@ -12,7 +12,7 @@ tags:
 ```javascript
 npm install babel-polyfill
 ```
-
+<!-- more -->
 ### main.js引入
 
 ```

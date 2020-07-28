@@ -15,7 +15,7 @@ tags:
 登录coding.net创建私人项目
 
 并在项目设置-部署公钥 中添加key
-
+<!-- more -->
 ### 上传
 
 如果在coding.net创建时已经生成README.md则需要先合并代码
