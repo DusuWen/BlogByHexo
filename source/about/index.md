@@ -19,17 +19,17 @@ type: "about"
 
 ### 掌握技能
 
-* 熟练使用HTML5、CSS3、JavaScript
-* 精通Vue.js，以及Vue全家桶包括Vuex，Vue router
-* 对Vue组件化、模块化有深刻理解
+* 熟练使用 HTML5、CSS3、JavaScript
+* 精通 Vue.js，以及 Vue 全家桶包括 Vuex，Vue router
+* 对 Vue 组件化、模块化有深刻理解
 * 对前端工程化开发有深刻理解
-* 熟悉ES6语法，了解Webpack构建工具配置
-* 熟悉React.js
-* 熟悉Node.js
-* 了解 Cesium.js
-* 有混合App开发经验，微信小程序开发经验
+* 熟悉 ES6 语法，了解 Webpack 构建工具配置
+* 熟悉 React + Ant-Design + Dva + Umi 技术栈
+* 熟悉 Node.js
+* 了解 Cesium.js、D3.js
+* 有混合 App 开发经验，微信小程序开发经验
 * 对前端工作在项目、产品中的位置有理解和认识
-* 熟练使用Git、JIRA
+* 熟练使用 Git、JIRA
 
 ### 工作经历
 
@@ -63,10 +63,11 @@ type: "about"
      - 包括年度报告、月度报告
      - 技术栈使用Vue，Vuex，Vue Router，Three.js，Animate.css
 3. 英思唯 (2019.10 - 至今)
-   * 北京航天航星卫星发射项目（2019.11-2019.12）
+
+   * 北京航天恒星卫星发射项目（2019.11-2019.12）
      * 负责所有页面的开发联调维护
      * 技术栈使用Vue，Vuex，Vue Router
-     * 二次封装Element-UI组件
+     * 二次封装 Element-UI 组件
    * 印尼金融风控项目
      * 技术栈使用React + ant-design + dvi + umi
      * 使用ant-v G2/plot图表
@@ -74,8 +75,11 @@ type: "about"
    * 数据中台
      * 负责所有页面开发
      * 技术栈使用Vue + Vuex + Vue Router
-     * 使用echart图表
+     * 使用 echart 图表
    * AI中台
      * 负责所有页面开发
      * 技术栈使用Vue + Vuex + Vue Router + Mock Server
      * 基于ant-v g6 的可视化拖拽编辑器
+   * 政企项目
+     * 负责维护自研可视化组件
+     * 技术栈使用 Vue + Vuex + Vue Router +  D3.js
