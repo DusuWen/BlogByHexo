@@ -1,4 +1,2 @@
-# BlogByHexo
-
-#### 安装主题
-git clone https://github.com/yanm1ng/hexo-theme-vexo.git themes/vexo
+### BlogByHexo
+个人博客地址https://dusuwen.github.io/dusuwen/
