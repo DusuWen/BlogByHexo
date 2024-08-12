@@ -5,7 +5,7 @@ tags:
  - Hexo
 ---
 
-# #方案
+## 方案
 
 使用git+hexo部署到github
 
@@ -85,15 +85,23 @@ hexo new [layout] "新文章标题"
 
 如果没有设置 `layout` 的话，默认使用 [_config.yml](https://hexo.io/zh-cn/docs/configuration.html) 中的 `default_layout` 参数代替。如果标题包含空格的话，请使用引号括起来。 
 
-生成静态文件
-
+本地预览
+```bash
+hexo server
 ```
+
+清理缓存
+```bash
+hexo clean
+```
+
+生成静态文件
+```bash
 hexo g
 ```
 
 部署网站
-
-```
+```bash
 hexo d
 ```
 
