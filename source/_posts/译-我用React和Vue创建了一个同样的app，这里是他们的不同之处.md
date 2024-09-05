@@ -2,6 +2,7 @@
 title: '[译]我用React和Vue创建了一个同样的app，这里是他们的不同之处'
 date: 2019-08-09 16:58:07
 tags:
+  - 译
 ---
 
 原文地址：[I created the exact same app in React and Vue. Here are the differences.](https://medium.com/javascript-in-plain-english/i-created-the-exact-same-app-in-react-and-vue-here-are-the-differences-e9a1ae8077fd)
