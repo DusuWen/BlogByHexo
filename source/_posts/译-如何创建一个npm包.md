@@ -1006,4 +1006,4 @@ http://npmjs.com/package/<your-package-name>
 - GitHub Actions，用于 CI 流程
 - Changesets，用于版本化和发布包
 
-后续还可以设置 Changesets GitHub action 和 PR bot，让贡献者在提交 PR 时自动推荐添加 changeset。如果你还有问题，请告诉我！
+后续还可以设置 Changesets GitHub action 和 PR bot，让贡献者在提交 PR 时自动推荐添加 changeset。
